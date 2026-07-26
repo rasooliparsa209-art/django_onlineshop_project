@@ -36,11 +36,11 @@ class PageTests(TestCase):
 
     def test_signup_page_template(self):
         response = self.client.get(reverse('signup'))
-        self.assertTemplateUsed(response, 'registration/signup.html')
+        self.assertTemplateUsed(response, 'account/signup.html')
 
 
     def test_login_page_template(self):
         response = self.client.get(reverse('login'))
-        self.assertTemplateUsed(response, 'registration/login.html')
+        self.assertTemplateUsed(response, 'account/login.html')
 
 
