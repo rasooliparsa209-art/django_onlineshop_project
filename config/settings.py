@@ -122,3 +122,5 @@ STATIC_URL = 'static/'
 
 # accounts config 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
